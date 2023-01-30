@@ -3,3 +3,120 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    
+}
+
+a:hover {
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin: 10px;
+}
+
+.form-search {
+    margin-right: 20px;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color:aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+}
+
+#search {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+.main-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    margin: 0 20px;
+}
+
+.nav li {
+    width: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    margin-bottom: 20px ;
+}
+
+.article-header {
+    margin: 10px 0;
+}
+
+#history .article-header {
+    margin: 0 0 10px;
+}
+
+.infobox {
+    margin: 0 20px;
+    text-align: center;
+}
+.infobox .img {
+    margin: 10px 0;
+}
+
+.table {
+    margin-top: 10px;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 10px 15px;
+}
+
+.table td {
+    vertical-align: top;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
