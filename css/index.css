@@ -8,6 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: black;
 }
 
@@ -28,8 +30,9 @@ a:hover {
     transition: all 0.5s;
 }
 
-.intro {
+.header {
     display: flex;
+    background-color: #339966;
     justify-content: space-between;
     align-items: center;
 }
