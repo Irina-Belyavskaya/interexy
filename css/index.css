@@ -44,6 +44,8 @@ a:hover {
     background-color: #339966;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
