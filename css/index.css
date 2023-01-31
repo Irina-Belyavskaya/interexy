@@ -17,11 +17,16 @@ li {
     list-style-type: none;
 }
 
+.nav ul {
+    width: 100px; 
+    transition: all 1.5s ease;
+}
+
 a {
     text-decoration: none;
     color: black;
     display: block;
-    
+    transition: all 1.5s ease;
 }
 
 a:hover {
@@ -36,6 +41,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     margin: 10px;
 }
@@ -62,14 +68,34 @@ a:hover {
     margin: 20px 0;
 }
 
-
 .container {
     display: flex;
     justify-content: space-between;
 }
 
-.nav {
+.nav-wrap {
     margin: 0 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.checkbox {
+    width:18px;
+    height:18px;
+    align-self: flex-start;
+}
+
+.checkbox:checked ~ ul {
+    width:0;    
+    transition: all 1.5s ease;
+}
+
+.checkbox:checked ~ ul a {   
+    color: #d4fc79;
+    transition: all 0.5s ease;
 }
 
 .nav li {
