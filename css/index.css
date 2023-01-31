@@ -22,11 +22,15 @@ li {
     transition: all 1.5s ease;
 }
 
+.nav ul a {
+    color: black;
+    transition: color 3.5s ease;
+}
+
 a {
     text-decoration: none;
     color: black;
     display: block;
-    transition: all 1.5s ease;
 }
 
 a:hover {
@@ -63,6 +67,29 @@ a:hover {
     border-color: aliceblue;
 }
 
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-nav li {
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.top-nav li:hover > .nested-list {
+    height: 80px;
+    color: black;
+    transition: all 1s ease;
+}
+
+.nested-list {
+    color: rgba(0,0,0,0);
+    height: 0;
+    transition: all 1s ease;
+}
+
 .main-header {
     text-align: center;
     margin: 20px 0;
@@ -73,13 +100,11 @@ a:hover {
     justify-content: space-between;
 }
 
-.nav-wrap {
-    margin: 0 20px;
-}
-
 .nav {
+    margin: 0 20px;
     display: flex;
     flex-direction: row-reverse;
+    box-shadow: 10px 10px 10px rgba(1,1,1,0.3);
 }
 
 .checkbox {
@@ -94,7 +119,7 @@ a:hover {
 }
 
 .checkbox:checked ~ ul a {   
-    color: #d4fc79;
+    color: rgba(0,0,0,0);
     transition: all 0.5s ease;
 }
 
@@ -142,6 +167,42 @@ a:hover {
 
 .table td {
     vertical-align: top;
+}
+
+.wrap-info-click {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-click {
+    align-self: center;
+    cursor: pointer;
+}
+
+.park img {
+    width: 284px;
+    height: 150px;
+    transition: height 1s ease; 
+}
+
+.map img {
+    width: 284px;
+    height: 250px;
+    transition: height 1s ease; 
+}
+
+.info-click:checked ~ .wrap-aside {
+    height: 0;
+    color: rgba(0,0,0,0);
+    cursor: pointer;
+    transition: color 0.3s;
+} 
+
+.info-click:checked ~ .wrap-aside figure img,
+.info-click:checked ~ .wrap-aside table,
+.info-click:checked ~ .wrap-aside figure {
+    height: 0;
+    transition: height 1s ease; 
 }
 
 .footer {
